@@ -1,23 +1,95 @@
-<h1>Hello, this is Andrei's page!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Andrei's Page</title>
 
-<section id="project">
-  <h2>ESP32 heating alert Telegram Bot</h2>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, sans-serif;
+      background: #0b0b0f;
+      color: #f1f1f1;
+      font-size: 20px;
+      line-height: 1.7;
+    }
 
-  <p>
-    This is my personal project using an <strong>ESP32 microcontroller</strong> and a
-    temperature sensor to alert my father in case the heating goes off so he can
-    prevent the pipes from freezing.
-  </p>
+    .page-wrapper {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
 
-  <img src="img/pet1.jpg" alt="ESP32-based TG alert bot">
-  <img src="img/pet2.jpg" alt="With TFT display">
-  <img src="img/pet3.jpg" alt="Telegram bot notification ">
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-  <p>
-    But most importantly... It can show pics of my cat! Perfection!
-  </p>
+    h1 {
+      font-size: 2.8rem;
+      color: #ffffff;
+    }
 
-  <img src="img/pet4.jpg" alt="128x160 Meow!">
-  <img src="img/pet5.jpg" alt="IRL Meow!">
-  <img src="img/pet6.jpg" alt="Perfection!">
-</section>
+    h2 {
+      font-size: 2rem;
+      color: #e6c35c;
+    }
+
+    #project {
+      background: #161622;
+      border-radius: 16px;
+      padding: 20px 28px 40px;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.7);
+      border: 1px solid #2a2a39;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.65);
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- Your text exactly as you wrote it -->
+    <h1>Hello, this is Andrei's page</h1>
+
+    <section id="project">
+      <h2>ESP32 Heating Monitor & Telegram Bot</h2>
+
+      <p>
+        This is my personal project using an <strong>ESP32 microcontroller</strong> and a
+        temperature, pressure, and humidity sensor to monitor our home heating system.
+        When the temperature drops too low, the ESP32 sends a warning through a
+        <strong>Telegram bot</strong> so my father knows the heating has turned off and can
+        prevent the pipes from freezing.
+      </p>
+
+      <img src="img/pet1.jpg" alt="ESP32 board on table">
+      <img src="img/pet2.jpg" alt="TFT showing temperature, pressure, humidity">
+      <img src="img/pet3.jpg" alt="Telegram bot notification on phone">
+
+      <p>
+        The ESP32 also drives a small TFT display where I can show sensor data and even
+        pictures of my cat, just for fun.
+      </p>
+
+      <img src="img/pet4.jpg" alt="Cat displayed on TFT screen">
+      <img src="img/pet5.jpg" alt="Photo of my cat">
+      <img src="img/pet6.jpg" alt="Cat posing in a spiral shape">
+    </section>
+
+  </div>
+</body>
+</html>
