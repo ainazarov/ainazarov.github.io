@@ -49,20 +49,31 @@
       margin-bottom: 22px;
     }
 
+    figure {
+      margin: 25px auto;
+      text-align: center;
+    }
+
     img {
       display: block;
-      margin: 20px auto;
+      margin: 0 auto;
       max-width: 100%;
       height: auto;
       border-radius: 14px;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.65);
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #cfcfcf;
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
   <div class="page-wrapper">
 
-    <!-- Your text exactly as you wrote it -->
     <h1>Hello, this is Andrei's page</h1>
 
     <section id="project">
@@ -70,24 +81,47 @@
 
       <p>
         This is my personal project using an <strong>ESP32 microcontroller</strong> and a
-        temperature, pressure, and humidity sensor to monitor our home heating system.
+        temperature sensor to monitor our second appartment gas heating system.
         When the temperature drops too low, the ESP32 sends a warning through a
         <strong>Telegram bot</strong> so my father knows the heating has turned off and can
         prevent the pipes from freezing.
       </p>
 
-      <img src="img/pet1.jpg" alt="ESP32 board on table">
-      <img src="img/pet2.jpg" alt="TFT showing temperature, pressure, humidity">
-      <img src="img/pet3.jpg" alt="Telegram bot notification on phone">
+      <figure>
+        <img src="img/pet1.jpg" alt="ESP32 board used, connected over Wifi">
+        <figcaption>ESP32 board used, connected over Wifi</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/pet2.jpg" alt="TFT screen 128x160">
+        <figcaption>TFT screen 128x160</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/pet3.jpg" alt="Telegram bot notifies in case of heating outage">
+        <figcaption>Telegram bot notifies in case of heating outage</figcaption>
+      </figure>
 
       <p>
         The ESP32 also drives a small TFT display where I can show sensor data and even
         pictures of my cat, just for fun.
       </p>
 
-      <img src="img/pet4.jpg" alt="Cat displayed on TFT screen">
-      <img src="img/pet5.jpg" alt="Photo of my cat">
-      <img src="img/pet6.jpg" alt="Cat posing in a spiral shape">
+      <figure>
+        <img src="img/pet4.jpg" alt="128x160 Meow!">
+        <figcaption>128x160 Meow!</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/pet5.jpg" alt="IRL Meow!">
+        <figcaption>IRL Meow!</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/pet6.jpg" alt="Perfection!">
+        <figcaption>Perfection!</figcaption>
+      </figure>
+
     </section>
 
   </div>
